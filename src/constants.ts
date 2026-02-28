@@ -2,6 +2,7 @@ export const BUSINESS_INFO = {
   name: "Funland – Family & Events Park",
   location: "Funland Area 25, Lilongwe, Malawi",
   phone: "+265 998 89 5292",
+  phoneRaw: "265998895292",
   hours: {
     weekdays: "08:00 AM - 05:00 PM",
     saturday: "08:00 AM - 05:00 PM",

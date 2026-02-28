@@ -18,6 +18,7 @@ import {
   Quote
 } from 'lucide-react';
 import { BUSINESS_INFO, GALLERY_IMAGES, SERVICES, TESTIMONIALS } from './constants';
+import WhatsAppButton from './components/WhatsAppButton';
 
 const IconMap: Record<string, any> = {
   Smile: Smile,
@@ -87,7 +88,7 @@ export default function App() {
               </button>
             ))}
             <a 
-              href={`tel:${BUSINESS_INFO.phone}`}
+              href={`tel:+${BUSINESS_INFO.phoneRaw}`}
               className="bg-brand-green hover:bg-brand-green/90 text-white px-5 py-2 rounded-full text-sm font-bold flex items-center gap-2 transition-transform hover:scale-105 shadow-sm"
             >
               <Phone size={16} />
@@ -130,7 +131,7 @@ export default function App() {
               </button>
             ))}
             <a 
-              href={`tel:${BUSINESS_INFO.phone}`}
+              href={`tel:+${BUSINESS_INFO.phoneRaw}`}
               className="mt-auto bg-brand-blue text-white p-5 rounded-2xl font-bold flex items-center justify-center gap-3 text-xl"
             >
               <Phone size={24} />
@@ -396,6 +397,55 @@ export default function App() {
           </motion.div>
         )}
       </AnimatePresence>
+
+      {/* Video Experience Section */}
+      <section className="py-24 md:py-32 lg:py-40 px-6 bg-white overflow-hidden relative">
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full max-w-7xl">
+          <div className="absolute top-20 left-10 w-64 h-64 bg-brand-blue/5 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-20 right-10 w-64 h-64 bg-brand-yellow/5 rounded-full blur-3xl"></div>
+        </div>
+
+        <div className="max-w-7xl mx-auto relative z-10">
+          <div className="text-center mb-16">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              <div className="inline-flex items-center gap-2 text-brand-blue font-bold text-sm uppercase tracking-widest mb-4">
+                Experience Funland
+              </div>
+              <h2 className="mb-6">Watch Our Experience</h2>
+              <p className="text-brand-text/60 max-w-2xl mx-auto text-lg">
+                See the fun and excitement at our park! Get a glimpse of the joy and memories being made every day at Funland.
+              </p>
+            </motion.div>
+          </div>
+
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="max-w-[900px] mx-auto"
+          >
+            <div className="relative aspect-video w-full overflow-hidden shadow-2xl group">
+              <iframe 
+                src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F873929033343558%2F&show_text=0&t=0&width=900" 
+                className="absolute inset-0 w-full h-full"
+                style={{ border: 'none', overflow: 'hidden' }} 
+                scrolling="no" 
+                frameBorder="0" 
+                allowFullScreen={true} 
+                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                loading="lazy"
+                title="Funland Experience Reel"
+              ></iframe>
+            </div>
+          </motion.div>
+        </div>
+      </section>
 
       {/* Social Media Section */}
       <section className="py-24 md:py-32 lg:py-40 px-6 bg-brand-bg">
@@ -747,7 +797,7 @@ export default function App() {
                 </li>
                 <li className="flex items-center gap-4">
                   <Phone size={20} className="text-brand-green shrink-0" />
-                  <a href={`tel:${BUSINESS_INFO.phone}`} className="hover:text-white text-lg">{BUSINESS_INFO.phone}</a>
+                  <a href={`tel:+${BUSINESS_INFO.phoneRaw}`} className="hover:text-white text-lg">{BUSINESS_INFO.phone}</a>
                 </li>
               </ul>
             </div>
@@ -762,6 +812,8 @@ export default function App() {
           </div>
         </div>
       </footer>
+
+      <WhatsAppButton />
     </div>
   );
 }
