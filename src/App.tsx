@@ -214,7 +214,7 @@ function App() {
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src="image/480269293_1159799439489817_2429231014074237391_n.jpg" 
+            src="/image/480269293_1159799439489817_2429231014074237391_n.jpg" 
             alt="Funland – Family & Events Park" 
             className="w-full h-full object-cover brightness-[0.65]"
           />
@@ -315,7 +315,7 @@ function App() {
             >
               <div className="aspect-square rounded-[3rem] overflow-hidden shadow-2xl relative z-10">
                 <img 
-                  src="image/490256881_1205566018246492_2410681126448273193_n.jpg" 
+                  src="/image/490256881_1205566018246492_2410681126448273193_n.jpg" 
                   alt="Kids having fun" 
                   className="w-full h-full object-cover"
                 />
@@ -432,7 +432,7 @@ function App() {
             >
               <div className="aspect-[4/5] rounded-[3rem] overflow-hidden shadow-2xl relative z-10">
                 <img 
-                  src="image/469938255_1128625858654280_4528220363706228469_n.jpg" 
+                  src="/image/469938255_1128625858654280_4528220363706228469_n.jpg" 
                   alt="Event Setup at Funland" 
                   className="w-full h-full object-cover"
                 />
@@ -461,7 +461,7 @@ function App() {
             >
               <div className="aspect-square rounded-[3rem] overflow-hidden shadow-2xl relative z-10 border-4 border-white/20">
                 <img 
-                  src="image/469980332_1128627675320765_8972459575015369654_n.jpg" 
+                  src="/image/469980332_1128627675320765_8972459575015369654_n.jpg" 
                   alt="Aerobics Session at Funland" 
                   className="w-full h-full object-cover"
                 />
