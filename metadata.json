@@ -1,7 +1,5 @@
 {
   "name": "Funland – Family & Events Park",
-  "description": "Lilongwe’s ultimate family fun and events destination in Area 25, Malawi. Clean, modern, and professional entertainment venue.",
-  "requestFramePermissions": [
-    "geolocation"
-  ]
+  "description": "A landing page for Funland – Family & Events Park in Area 25, Lilongwe, Malawi.",
+  "requestFramePermissions": []
 }
