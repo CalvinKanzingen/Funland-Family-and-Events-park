@@ -9,6 +9,11 @@ import {
 import { BUSINESS_INFO, SERVICES, GALLERY_IMAGES, TESTIMONIALS } from './constants';
 import WhatsAppButton from './components/WhatsAppButton';
 
+import heroImg from './assets/images/480269293_1159799439489817_2429231014074237391_n.jpg';
+import kidsImg from './assets/images/490256881_1205566018246492_2410681126448273193_n.jpg';
+import eventImg from './assets/images/469938255_1128625858654280_4528220363706228469_n.jpg';
+import aerobicsImg from './assets/images/469980332_1128627675320765_8972459575015369654_n.jpg';
+
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -214,7 +219,7 @@ function App() {
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src="/image/480269293_1159799439489817_2429231014074237391_n.jpg" 
+            src={heroImg} 
             alt="Funland – Family & Events Park" 
             className="w-full h-full object-cover brightness-[0.65]"
           />
@@ -315,7 +320,7 @@ function App() {
             >
               <div className="aspect-square rounded-[3rem] overflow-hidden shadow-2xl relative z-10">
                 <img 
-                  src="/image/490256881_1205566018246492_2410681126448273193_n.jpg" 
+                  src={kidsImg} 
                   alt="Kids having fun" 
                   className="w-full h-full object-cover"
                 />
@@ -432,7 +437,7 @@ function App() {
             >
               <div className="aspect-[4/5] rounded-[3rem] overflow-hidden shadow-2xl relative z-10">
                 <img 
-                  src="/image/469938255_1128625858654280_4528220363706228469_n.jpg" 
+                  src={eventImg} 
                   alt="Event Setup at Funland" 
                   className="w-full h-full object-cover"
                 />
@@ -461,7 +466,7 @@ function App() {
             >
               <div className="aspect-square rounded-[3rem] overflow-hidden shadow-2xl relative z-10 border-4 border-white/20">
                 <img 
-                  src="/image/469980332_1128627675320765_8972459575015369654_n.jpg" 
+                  src={aerobicsImg} 
                   alt="Aerobics Session at Funland" 
                   className="w-full h-full object-cover"
                 />
