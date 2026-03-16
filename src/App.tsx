@@ -9,10 +9,10 @@ import {
 import { BUSINESS_INFO, SERVICES, GALLERY_IMAGES, TESTIMONIALS } from './constants';
 import WhatsAppButton from './components/WhatsAppButton';
 
-import heroImg from './assets/images/480269293_1159799439489817_2429231014074237391_n.jpg';
-import kidsImg from './assets/images/490256881_1205566018246492_2410681126448273193_n.jpg';
-import eventImg from './assets/images/469938255_1128625858654280_4528220363706228469_n.jpg';
-import aerobicsImg from './assets/images/469980332_1128627675320765_8972459575015369654_n.jpg';
+import heroImg from './assets/images/hero.jpg';
+import kidsImg from './assets/images/kids.jpg';
+import eventImg from './assets/images/event.jpg';
+import aerobicsImg from './assets/images/aerobics.jpg';
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

@@ -1,9 +1,9 @@
-import img1 from './assets/images/495807737_1237851501684610_4938855764951813484_n.jpg';
-import img2 from './assets/images/496185663_1236902448446182_6562082255101465608_n_1.jpg';
-import img3 from './assets/images/488415512_1202186785251082_4644842928286299632_n.jpg';
-import img4 from './assets/images/83104312_130676818449194_7048252683781668864_n.jpg';
-import img5 from './assets/images/472388190_1143375397179326_303911016593041217_n.jpg';
-import img6 from './assets/images/83308246_122205439296332_7736634429778427904_n.jpg';
+import img1 from './assets/images/gallery1.jpg';
+import img2 from './assets/images/gallery2.jpg';
+import img3 from './assets/images/gallery3.jpg';
+import img4 from './assets/images/gallery4.jpg';
+import img5 from './assets/images/gallery5.jpg';
+import img6 from './assets/images/gallery6.jpg';
 
 export const BUSINESS_INFO = {
   name: "Funland – Family & Events Park",
