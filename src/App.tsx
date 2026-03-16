@@ -10,7 +10,6 @@ import { BUSINESS_INFO, SERVICES, GALLERY_IMAGES, TESTIMONIALS } from './constan
 import WhatsAppButton from './components/WhatsAppButton';
 
 const heroImg = 'https://i.pinimg.com/736x/4a/c6/85/4ac685fbd6f52a315ed773c6d29c1a5c.jpg';
-const kidsImg = 'https://i.pinimg.com/736x/84/af/26/84af260d27de204edeef87328081be96.jpg';
 const eventImg = 'https://i.pinimg.com/736x/d8/d9/c5/d8d9c51f6a8d6285ab9270d7bf21a05e.jpg';
 const aerobicsImg = 'https://i.pinimg.com/736x/51/96/e6/5196e6092c809059d7ea43b555594670.jpg';
 
@@ -240,7 +239,7 @@ function App() {
               <span className="text-brand-yellow">Play & Celebrate.</span>
             </h1>
             <p className="text-base sm:text-lg md:text-2xl text-white/90 mb-8 md:mb-10 max-w-3xl mx-auto font-medium px-2">
-              Step into a world of endless laughter, thrilling activities, and unforgettable moments. From weekend family outings to spectacular private events, Funland is your perfect escape in the heart of Area 25c.
+              Step into a world of endless laughter, thrilling activities, and unforgettable moments. From weekend family outings to spectacular private events, Funland is your perfect escape in the heart of Area 25.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mb-6 md:mb-8 w-full max-w-md sm:max-w-none mx-auto">
               <button 
@@ -318,17 +317,23 @@ function App() {
               transition={{ duration: 0.8 }}
               className="relative"
             >
-              <div className="aspect-square rounded-[3rem] overflow-hidden shadow-2xl relative z-10">
+              <div 
+                className="aspect-square rounded-[3rem] overflow-hidden shadow-2xl relative z-10 transition-all duration-300 ease-out hover:scale-[1.03] active:scale-[1.03] hover:shadow-[0_0_40px_rgba(0,0,0,0.15)] active:shadow-[0_0_40px_rgba(0,0,0,0.15)] cursor-pointer"
+                onTouchStart={() => {}} // Enables :active state on iOS Safari
+              >
                 <img 
-                  src={kidsImg} 
+                  src="https://i.pinimg.com/474x/f5/a6/66/f5a66647ca04e250cd4bc8fa6fd118a9.jpg" 
                   alt="Kids having fun" 
                   className="w-full h-full object-cover"
                 />
               </div>
               
-              <div className="absolute -bottom-8 -left-8 w-48 h-48 rounded-[2rem] overflow-hidden shadow-2xl z-20 border-8 border-white hidden md:block">
+              <div 
+                className="absolute -bottom-8 -left-8 w-48 h-48 rounded-[2rem] overflow-hidden shadow-2xl z-20 border-8 border-white hidden md:block transition-all duration-300 ease-out hover:scale-110 active:scale-110 hover:shadow-[0_0_30px_rgba(0,0,0,0.2)] active:shadow-[0_0_30px_rgba(0,0,0,0.2)] cursor-pointer"
+                onTouchStart={() => {}} // Enables :active state on iOS Safari
+              >
                 <img 
-                  src={GALLERY_IMAGES[0].url} 
+                  src="https://i.pinimg.com/474x/d0/c3/43/d0c343e86cd0b84ed5c2493889c07a96.jpg"
                   alt="Funland memories" 
                   className="w-full h-full object-cover"
                 />
