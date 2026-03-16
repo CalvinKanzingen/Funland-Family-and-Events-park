@@ -9,10 +9,10 @@ import {
 import { BUSINESS_INFO, SERVICES, GALLERY_IMAGES, TESTIMONIALS } from './constants';
 import WhatsAppButton from './components/WhatsAppButton';
 
-import heroImg from './assets/images/hero.jpg';
-import kidsImg from './assets/images/kids.jpg';
-import eventImg from './assets/images/event.jpg';
-import aerobicsImg from './assets/images/aerobics.jpg';
+const heroImg = 'https://i.pinimg.com/736x/4a/c6/85/4ac685fbd6f52a315ed773c6d29c1a5c.jpg';
+const kidsImg = 'https://i.pinimg.com/736x/84/af/26/84af260d27de204edeef87328081be96.jpg';
+const eventImg = 'https://i.pinimg.com/736x/d8/d9/c5/d8d9c51f6a8d6285ab9270d7bf21a05e.jpg';
+const aerobicsImg = 'https://i.pinimg.com/736x/51/96/e6/5196e6092c809059d7ea43b555594670.jpg';
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -325,6 +325,15 @@ function App() {
                   className="w-full h-full object-cover"
                 />
               </div>
+              
+              <div className="absolute -bottom-8 -left-8 w-48 h-48 rounded-[2rem] overflow-hidden shadow-2xl z-20 border-8 border-white hidden md:block">
+                <img 
+                  src={GALLERY_IMAGES[0].url} 
+                  alt="Funland memories" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+
               <div className="absolute -bottom-10 -left-10 w-64 h-64 bg-brand-yellow rounded-full -z-10 blur-3xl opacity-50"></div>
               <div className="absolute -top-10 -right-10 w-64 h-64 bg-brand-blue rounded-full -z-10 blur-3xl opacity-50"></div>
             </motion.div>
