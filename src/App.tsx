@@ -333,7 +333,7 @@ function App() {
                 onTouchStart={() => {}} // Enables :active state on iOS Safari
               >
                 <img 
-                  src="https://i.pinimg.com/474x/d0/c3/43/d0c343e86cd0b84ed5c2493889c07a96.jpg"
+                  src="https://i.pinimg.com/736x/d0/c3/43/d0c343e86cd0b84ed5c2493889c07a96.jpg"
                   alt="Funland memories" 
                   className="w-full h-full object-cover"
                 />
